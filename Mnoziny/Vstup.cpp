@@ -15,7 +15,7 @@ short Vstup::NacitajVelkost()
 	return number;
 }
 
-void Vstup::NacitajPrvky(Mnozina mnozina)
+void Vstup::NacitajPrvky(Mnozina& mnozina)
 {
 	//short cislo;
 	short velkost = mnozina.getVelkost();
