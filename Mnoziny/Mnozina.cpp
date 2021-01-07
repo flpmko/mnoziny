@@ -7,8 +7,16 @@ Mnozina::Mnozina()
 
 Mnozina::Mnozina(short paVelkost)
 {
-	this->velkost = paVelkost;
-	this->zoznam = new short* [paVelkost];
+	if (paVelkost > 0)
+	{
+		this->velkost = paVelkost;
+		this->zoznam = new short* [paVelkost];
+	}
+	else
+	{
+		this->velkost = 1;
+		this->zoznam = new short* [1];
+	}
 }
 
 short Mnozina::getVelkost()
@@ -25,11 +33,10 @@ void Mnozina::VlozCislo(int pozicia, short* hodnota)
 {
 	if (0 <= pozicia || pozicia <= this->velkost)
 	{
-		/*if (lookup(hodnota))
-		{
-			VlozCislo();
-		}*/
-		this->zoznam[pozicia] = hodnota;
+		//if (hodnota && *hodnota != 0)
+		//{
+			this->zoznam[pozicia] = hodnota;
+		//}
 	}
 }
 
@@ -50,11 +57,14 @@ void Mnozina::nacitajCislo(int i)
 
 bool Mnozina::lookup(short* cislo)
 {
-	for (int i = 0; i < this->velkost; i++)
-	{
-		if (this->zoznam[i] == cislo)
-			return true;
-	}
+	//if (cislo && *cislo != 0)
+	//{
+		for (int i = 0; i < this->velkost; i++)
+		{
+			if (this->zoznam[i] == cislo)
+				return true;
+		}
+	//}
 	return false;
 }
 

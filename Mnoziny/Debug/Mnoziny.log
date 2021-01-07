@@ -1,4 +1,4 @@
 ﻿  Mnozina.cpp
-C:\Users\flpmk\source\repos\Mnoziny_Solution\Mnoziny\Mnozina.cpp(39,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\flpmk\source\repos\Mnoziny_Solution\Mnoziny\Mnozina.cpp(65,10): warning C4477: 'printf' : format string '%hd' requires an argument of type 'int', but variadic argument 1 has type 'short *'
+C:\Users\flpmk\source\repos\Mnoziny_Solution\Mnoziny\Mnozina.cpp(46,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\flpmk\source\repos\Mnoziny_Solution\Mnoziny\Mnozina.cpp(75,10): warning C4477: 'printf' : format string '%hd' requires an argument of type 'int', but variadic argument 1 has type 'short *'
   Mnoziny.vcxproj -> C:\Users\flpmk\source\repos\Mnoziny_Solution\Debug\Mnoziny.exe
